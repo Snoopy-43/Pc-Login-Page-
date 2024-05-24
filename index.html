@@ -10,15 +10,10 @@
 <body>
     <div class="container">
      <div class="box">
-        <h1 id="title">Sign Up</h1>
+        <h1 id="title">Login</h1>
         <form>
             <div class="input">
-                <div class="input-field" id="name">
-                    <i class='fas fa-user-circle'></i>
-                    <input type="text" placeholder="Name " required>
-                </div>
-
-                <div class="input-field">
+                    <div class="input-field">
                     <i class="fas fa-envelope-open"></i>
                     <input type="email" placeholder="E-mail" required>
                 </div>
@@ -30,33 +25,12 @@
                 <p>Forgot Password<a href="#">Click Here</a></p>
             </div>
             <div class="btn">
-                <button type="button" id="signup">Sign Up</button>
-                <button type="button" id="login" class="disable">Login</button>
+             
+                <button type="button" id="login">Login</button>
             </div>
         </form>
      </div>
     </div>
-    <script>
-        let signupBtn = document.getElementById('signup');
-        let loginBtn = document.getElementById('login');
-        let heading = document.getElementById('name');
-        let titleChange = document.getElementById('title');
-
-        loginBtn.onclick = function(){
-            heading.style.maxHeight = "0px";
-            title.innerHTML = "Login";
-            signupBtn.classList.add("disable");
-            loginBtn.classList.remove("disable");
-       
-        }
-        signupBtn.onclick = function(){
-            heading.style.maxHeight = "60px";
-            title.innerHTML = "Sign up";
-            signupBtn.classList.remove("disable");
-            loginBtn.classList.add("disable");
-       
-        }
     
-    </script>
 </body>
 </html>
