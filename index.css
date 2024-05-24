@@ -76,7 +76,7 @@ form p a{
 .btn{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .btn button{
     flex-basis: 48%;
@@ -91,7 +91,7 @@ form p a{
     transition: background 1s;
 }
 .input{
-    height: 280px;
+    height: 200px;
 }
 .btn button.disable{
     background: #eaeaea;
